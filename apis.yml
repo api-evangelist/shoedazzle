@@ -1,8 +1,26 @@
 aid: shoedazzle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shoedazzle.png
 name: ShoeDazzle
-description: ShoeDazzle is a company surfaced as a portfolio company of a16z, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  ShoeDazzle is a California-based online fashion subscription retailer offering
+  curated shoes, handbags, and accessories through a VIP membership model.
+  Founded in March 2009 (early backers included Andreessen Horowitz and
+  Lightspeed Venture Partners), it was acquired by JustFab in August 2013 and is
+  now operated as a brand of TechStyle Fashion Group alongside Fabletics,
+  JustFab, FabKids, and Savage X Fenty. ShoeDazzle is a direct-to-consumer
+  e-commerce brand; as of this enrichment pass it publishes no public developer
+  API, developer portal, or machine-readable API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/shoedazzle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,26 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fashion
+- Ecommerce
+- Retail
+- Subscription
+- Footwear
+- Direct to Consumer
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 apis: []
+common:
+- type: DomainSecurity
+  url: security/shoedazzle-domain-security.yml
+- type: Website
+  url: https://www.shoedazzle.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
